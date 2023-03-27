@@ -355,7 +355,7 @@ class _FancyBackGestureDetectorState<T>
     assert(debugCheckHasDirectionality(context));
 
     final gestureDetector = RawGestureDetector(
-      behavior: HitTestBehavior.translucent,
+      behavior: HitTestBehavior.opaque,
       gestures: {
         _DirectionDependentDragGestureRecognizer:
             GestureRecognizerFactoryWithHandlers<
